@@ -5,17 +5,20 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LivroCadastrarComponent } from './livro-cadastrar/livro-cadastrar.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { LivrosListaComponent } from './livros-lista/livros-lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LivroCadastrarComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    LivrosListaComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
